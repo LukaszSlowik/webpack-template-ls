@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mainBg: mediumpurple;
+}
+
+$light-text: red;
+body {
+  background-color: var(--mainBg);
+  color: green;
+}
+
+.container {
+  padding: 1rem;
+  display: flex;
+
+  background: linear-gradient(to top, black, white);
+  h1 {
+    font-size: 60px;
+    @apply p-2;
+    text-align: center;
+  }
+}
